@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 // this is our schema to represent a restaurant
 const restaurantSchema = mongoose.Schema({
@@ -54,6 +54,6 @@ restaurantSchema.methods.serialize = function() {
 
 // note that all instance methods and virtual properties on our
 // schema must be defined *before* we make the call to `.model`.
-const Restaurant = mongoose.model("Restaurant", restaurantSchema);
+const Restaurant = mongoose.model('Restaurant', restaurantSchema);
 
 module.exports = { Restaurant };
